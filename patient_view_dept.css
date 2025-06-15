@@ -1,0 +1,80 @@
+/* Ensure content sits below header and above footer */
+.dept-container {
+  padding-top: 120px;   /* space for fixed header */
+  padding-bottom: 80px; /* space for footer */
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Page heading */
+.dept-container h2 {
+  font-size: 2rem;
+  color: #006442;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* 3 columns on desktop, adjust on smaller */
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Responsive fallback */
+@media (max-width: 800px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .dept-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card styling */
+.dept-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Department title */
+.dept-card h3 {
+  font-size: 1.3rem;
+  color: #006442;
+  margin-bottom: 12px;
+}
+
+/* Brief text */
+.dept-card p {
+  flex-grow: 1;
+  margin: 0 0 20px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* View Doctors button */
+.view-doc-btn {
+  padding: 10px 16px;
+  background-color: #006442;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover state */
+.view-doc-btn:hover {
+  background-color: #005230;
+}

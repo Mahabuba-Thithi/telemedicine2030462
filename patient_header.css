@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #006442;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav-left .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.search-wrapper { position: relative; }
+#search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+.suggestions-box {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 100;
+}
+.suggestions-box div { padding: 5px; cursor: pointer; }
+.filter-container { position: relative; margin-left: 15px; }
+.filter-icon span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  top: 30px;
+  right: 0;
+  z-index: 100;
+}
+.dropdown-content li { list-style: none; }
+.dropdown-content li a {
+  display: block;
+  padding: 5px 15px;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-content.show { display: block; }
+
+/* Patient Notification */
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.notification-icon { font-size: 20px; color: #fff; }
+.noti-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+.patient-noti-dropdown {
+  display: none;
+  position: absolute;
+  right: 90px;
+  top: 60px;
+  background: #fff;
+  color: #000;
+  min-width: 240px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  padding: 10px 0;
+}
+.patient-noti-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.patient-noti-dropdown li {
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+}
+.patient-noti-dropdown .time {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 4px;
+}
+.patient-noti-dropdown .no-noti {
+  padding: 10px;
+  text-align: center;
+  color: #666;
+}
+
+/* User Menu */
+.user-container { position: relative; display: inline-block; }

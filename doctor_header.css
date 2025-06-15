@@ -1,0 +1,155 @@
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006a4e;
+  padding: 10px 30px;
+  color: white;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.logo {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+/* ========== RIGHT SIDE ========== */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Notification wrapper */
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.notification-wrapper .notification-icon {
+  font-size: 20px;
+  color: white;
+}
+/* Red dot for new notifications */
+.notification-wrapper .noti-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* Notification dropdown panel */
+.noti-dropdown {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  background: white;
+  color: black;
+  min-width: 260px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 10px 0;
+}
+.noti-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.noti-dropdown li {
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.noti-dropdown .time {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 4px;
+}
+.noti-dropdown .no-noti {
+  padding: 10px;
+  text-align: center;
+  color: #666;
+}
+
+/* ========== NOTIFICATION ACTION BUTTONS ========== */
+.btn-accept {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+.btn-accept:hover {
+  background-color: #218838;
+}
+.btn-reject {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+.btn-reject:hover {
+  background-color: #c82333;
+}
+
+/* ========== USER MENU ========== */
+.navbar-right .username {
+  margin: 0;
+}
+.username {
+  margin-right: 5px;
+}
+.navbar-right .user-dropdown {
+  display: flex;
+  align-items: center;
+}
+.user-dropdown {
+  position: relative;
+}
+.user-dropdown i {
+  font-size: 24px;
+  cursor: pointer;
+}
+#dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: white;
+  color: black;
+  display: none;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+#dropdown-menu li {
+  padding: 8px 20px;
+}
+#dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+#dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+.user-dropdown.show #dropdown-menu {
+  display: block;
+}
+

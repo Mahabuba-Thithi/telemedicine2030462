@@ -1,0 +1,90 @@
+/* patient_all_doctors_tab.css */
+
+/* Container spacing */
+.docs-container {
+  padding-top: 140px;    /* a bit more top padding */
+  padding-bottom: 100px; /* a bit more bottom padding */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Page title */
+.docs-container h2 {
+  font-size: 2.2rem;
+  color: #006442;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Grid: 3 cards per row, responsive */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px; /* larger gap */
+}
+@media (max-width: 900px) {
+  .docs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .docs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Doctor card styling */
+.doc-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;           /* more padding */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name */
+.doc-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;       /* larger font */
+  color: #004d33;
+}
+
+/* Details */
+.doc-card p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 1rem;         /* comfortable size */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* View Profile button */
+.view-profile-btn {
+  margin-top: 20px;        /* more top margin */
+  padding: 12px 20px;      /* larger button */
+  background-color: #006442;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;       /* larger text */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.view-profile-btn:hover {
+  background-color: #004d33;
+}
+
+/* No doctors message */
+.no-docs {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 20px;
+}

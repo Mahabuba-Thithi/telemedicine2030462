@@ -1,0 +1,41 @@
+/* doctor_myprofile.css */
+
+.profile-container {
+  max-width: 800px;
+  margin: 120px auto 80px;
+  padding: 0 16px;
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  color: #006442;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profile-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.field {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.field .label {
+  width: 180px;
+  font-weight: 600;
+  color: #006442;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field .value {
+  flex: 1;
+  color: #333;
+}

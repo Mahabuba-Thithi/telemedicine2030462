@@ -1,0 +1,137 @@
+/* frontend/css/general_entry_dashboard.css */
+
+:root {
+  --primary: #006442; /* bottle green */
+  --light: #ffffff;   /* white */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--primary);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  color:white;
+  text-decoration: none;
+  margin-right: 1em;
+}
+.nav-item {
+  margin-right: 1em;
+  text-decoration: none;
+  color:white;
+}
+.nav-item.active {
+  font-weight: bold;
+}
+.nav-btn {
+  background: white;
+  color: var(--primary);
+  border: none;
+  padding: 0.5em 1em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.nav-btn:hover {
+  background: var(--primary);  /* Change background on hover */
+  color: white;                /* Change text color on hover */
+  transition: 0.3s;            /* Smooth transition */
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensures popup is on top */
+}
+.popup.hidden { display: none; }
+.popup-content {
+  background: var(--primary);
+  padding: 2em;
+
+  position: relative;
+  text-align: center;
+  z-index: 1000; /* Ensures popup content is above the dimmed background */
+  color:white;
+  width:350px;
+  height:150px;
+}
+.popup-content button {
+  margin: 0.5em;
+  margin-top:20px;
+  border-radius: 20px;
+  width:80px;
+}
+.close {
+  position: absolute;
+  top: 0.5em; right: 0.5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  color:beige;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 2em auto;
+  overflow: hidden;
+  z-index: 1; /* Keeps slider beneath the popup */
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 1.5em 0;
+  margin-top: 2em;
+}
+.footer a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 0.5em;
+}

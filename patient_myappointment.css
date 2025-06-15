@@ -1,0 +1,73 @@
+/* ============================= */
+/* ===== Reset & Basics ======== */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+/* ============================= */
+/* ===== Section Title ========= */
+/* ============================= */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ============================= */
+/* ==== Appointment Card ======= */
+/* ============================= */
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 20px 25px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.appointment-info {
+  flex: 1;
+}
+
+.appointment-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* ============================= */
+/* ==== Join Button ============ */
+/* ============================= */
+.appointment-action {
+  margin-left: 20px;
+}
+
+.join-btn {
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: not-allowed;
+  transition: background 0.3s;
+}
+
+.join-btn.active {
+  background-color: #006a4e;
+  cursor: pointer;
+}
+
+.join-btn.active:hover {
+  background-color: #00563c;
+}

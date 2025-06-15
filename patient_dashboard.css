@@ -1,0 +1,191 @@
+/* ============== */
+/* Navbar CSS */
+/* ============== */
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #006442;
+  color: #fff;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.nav-left .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 10px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* Center section (search and filter) */
+.nav-center {
+  display: flex;
+  align-items: center;
+}
+.search-wrapper {
+  position: relative;
+}
+#search-input {
+  height: 30px;
+  width: 200px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+}
+#search-input::placeholder {
+  color: rgba(51,51,51,0.5);
+}
+.suggestions-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1002;
+  display: none;
+  color: #000;
+}
+.suggestions-box div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.suggestions-box div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Filter dropdown */
+.filter-container {
+  position: relative;
+  margin-left: 10px;
+}
+.filter-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.filter-icon span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  margin: 3px 0;
+}
+.filter-icon span:nth-child(1) { width: 20px; }
+.filter-icon span:nth-child(2) { width: 14px; }
+.filter-icon span:nth-child(3) { width: 8px; }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  color: #333;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  z-index: 1001;
+}
+.dropdown-content li {
+  padding: 8px 16px;
+}
+.dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content li:hover {
+  background-color: #f1f1f1;
+}
+.show {
+  display: block;
+}
+
+/* User section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-right .fa-bell {
+  margin-right: 15px;
+  cursor: pointer;
+}
+#username {
+  margin-right: 10px;
+  color: #fff;
+}
+.user-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 5px;
+}
+.user-container .dropdown-content {
+  top: 60px;
+  right: 0;
+}
+
+/* ============== */
+/* Rest of CSS */
+/* ============== */
+
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Slider */
+.slider {
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */

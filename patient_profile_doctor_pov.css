@@ -1,0 +1,57 @@
+/* Container */
+.profile-container {
+  max-width: 800px;
+  margin: 100px auto 40px;  /* 100px top to clear fixed header */
+  padding: 0 20px;
+}
+
+/* Header with title and button */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-header h2 {
+  font-size: 1.8em;
+  color: #006442;
+}
+
+.btn-prescription {
+  padding: 8px 16px;
+  background-color: #006442;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-prescription:hover {
+  background-color: #005234;
+}
+
+/* Details list */
+.profile-details {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.detail-row .label {
+  width: 150px;
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-row .value {
+  flex: 1;
+  color: #555;
+}

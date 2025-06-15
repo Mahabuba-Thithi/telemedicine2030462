@@ -1,0 +1,55 @@
+/* ============================= */
+/* ===== MAIN CONTENT CSS ====== */
+/* ============================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.main-title {
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #006A4E;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.appointment-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.view-btn, .cancel-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #006A4E;
+}
+
+.cancel-btn {
+  background-color: #cc0000;
+}
+
